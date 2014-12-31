@@ -22,10 +22,10 @@ var BBCRadioProxy = function () {
     }
   };
 
-  console.log('Starting server on ' + this.options.hostname + ':' +this.options.port);
+  console.log('Starting server on ' + this.options.host + ':' +this.options.port);
 
   http.createServer(this.handlRequest.bind(this))
-      .listen(this.options.port, this.options.hostname);
+      .listen(this.options.port, this.options.host);
 
 };
 
